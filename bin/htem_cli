@@ -1,4 +1,4 @@
 #!/usr/bin/env ruby
 require "./lib/htem_cli_relatives"
 #lunch the CLI app
-HtemCli::Cli.new.run
+#HtemCli::Cli.new.run
