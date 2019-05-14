@@ -1,3 +1,4 @@
+require "./lib/htem_cli_relatives"
 require 'open-uri'
 require 'nokogiri'
 class HtemCli::Scraper
@@ -17,4 +18,17 @@ class HtemCli::Scraper
   end
       articles_list
 end
+
+# this method is responsible for scraping specific articles from Htem webpage
+    def self.scrape_specific_article(article_url)
+      doc = Nokogiri::HTML(open("http://htem.000webhostapp.com/"+ article_url))
+        article = HtemCli::Article.new
+        article.name = doc.css(".libele").text
+        article.description = doc.css(".description").text
+        article.location = doc.css(".small.location").text
+        article.price = doc.css(".small.price").text
+        article.owner = doc.css(".owner").text
+        article
+    end
+
 end
