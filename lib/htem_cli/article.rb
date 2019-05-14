@@ -4,7 +4,13 @@ attr_accessor :name, :infos, :url_article, :description, :location, :price, :own
 #article class
 
 def self.all
- HtemCli::Scraper.scrape_index_page
+
+  puts "Welcome to Htem"
+  puts "Here's the list of our available articles : "
+   HtemCli::Scraper.scrape_index_page.each.with_index(1) do |el,index|
+    puts "#{index} - #{el.name} - #{el.infos}"
+  end
+  return 
 end
 
 
