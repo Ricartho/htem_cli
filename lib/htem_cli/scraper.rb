@@ -12,10 +12,9 @@ class HtemCli::Scraper
     article.name = el.css(".title-wrap h5").text
     article.infos = el.css(".subtitle-wrap p").text
     article.url_article = el.css("a").attribute("href").value
-
+    #article.save
     articles_list.push(article)
-
-  end
+    end
       articles_list
 end
 
