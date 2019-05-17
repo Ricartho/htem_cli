@@ -1,8 +1,6 @@
 # HtemCli
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/htem_cli`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome!
+Htem_cli is a command line interface ruby gem that scrape datas from an online web site.
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Use the application to scrape date from http://htem.000webhostapp.com
 
 ## Development
 
@@ -34,5 +32,6 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/'looping-exception-8086'/htem_cli.
 
-##License
-The gem is available as open source under the terms of the MIT License https://opensource.org/licenses/MIT.
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
